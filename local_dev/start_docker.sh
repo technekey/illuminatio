@@ -18,5 +18,5 @@ minikube addons enable registry
 
 if [[ -n "${CI:-}" ]];
 then
-    sudo chown -R travis: /home/travis/.minikube/
+    sudo chown -R $USER: /home/$USER/.minikube/
 fi
